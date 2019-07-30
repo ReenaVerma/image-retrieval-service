@@ -11,3 +11,10 @@ Get list of links given a location:
 
 Get random link given a location:
 `http://localhost:8080/search/random/{destination}`
+
+## Run Docker Image
+```
+mvn clean package docker:build 
+docker run -p 8080:8080 image-retrieval-service
+```
+
